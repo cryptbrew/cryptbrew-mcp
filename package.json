@@ -1,0 +1,50 @@
+{
+  "name": "cryptbrew-mcp",
+  "version": "1.0.0",
+  "description": "Public MCP server for Cryptbrew product questions and live health checks",
+  "type": "module",
+  "bin": {
+    "cryptbrew-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "knowledge",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && node scripts/copy-knowledge.js && chmod +x dist/index.js",
+    "start": "node dist/index.js",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "cryptbrew",
+    "bitcoin",
+    "lightning",
+    "model-context-protocol"
+  ],
+  "author": "Cryptbrew",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptbrew/cryptbrew-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cryptbrew/cryptbrew-mcp/issues"
+  },
+  "homepage": "https://github.com/cryptbrew/cryptbrew-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  }
+}
