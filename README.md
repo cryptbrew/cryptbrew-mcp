@@ -33,6 +33,39 @@ npm start
 
 The server speaks MCP over **stdio** (stdout is reserved for protocol messages; logs go to stderr).
 
+## Remote HTTP (Streamable)
+
+Hosted at **https://mcp.cryptbrew.com/mcp** (health: `GET /` or `/health`).
+
+```bash
+npm run start:http   # listens on PORT (default 3040), path /mcp
+```
+
+Cursor remote MCP example:
+
+```json
+{
+  "mcpServers": {
+    "cryptbrew": {
+      "url": "https://mcp.cryptbrew.com/mcp"
+    }
+  }
+}
+```
+
+Or locally:
+
+```json
+{
+  "mcpServers": {
+    "cryptbrew-local-http": {
+      "url": "http://127.0.0.1:3040/mcp"
+    }
+  }
+}
+```
+
+
 ```bash
 npm test
 ```
