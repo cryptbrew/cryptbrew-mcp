@@ -38,6 +38,20 @@ function sendJson(res: ServerResponse, status: number, body: unknown): void {
   res.end(payload);
 }
 
+
+function serverCard() {
+  return {
+    name: SERVER_NAME,
+    description:
+      "Public Cryptbrew MCP — Bitcoin invoicing / tax-ready tracking Q&A, CryptBrew Lock info, and live health. No merchant auth.",
+    version: SERVER_VERSION,
+    remotes: [{ type: "streamable-http", url: "https://mcp.cryptbrew.com/mcp" }],
+    homepage: "https://www.cryptbrew.com/",
+    documentation: "https://github.com/cryptbrew/cryptbrew-mcp",
+    repository: "https://github.com/cryptbrew/cryptbrew-mcp",
+  };
+}
+
 function healthBody() {
   return {
     ok: true,
@@ -100,6 +114,15 @@ const httpServer = createHttpServer((req, res) => {
     applyCors(res);
     res.writeHead(204);
     res.end();
+    return;
+  }
+
+
+  if (
+    (path === "/.well-known/mcp.json" || path === "/.well-known/mcp/server-card.json") &&
+    (req.method === "GET" || req.method === "HEAD")
+  ) {
+    sendJson(res, 200, serverCard());
     return;
   }
 
