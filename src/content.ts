@@ -37,23 +37,24 @@ Website: https://www.cryptbrew.com
 Help: https://www.cryptbrew.com/help.html
 API docs: https://api.cryptbrew.com/redoc`;
 
-export const PRICING = `Cryptbrew payment fee: 1% with a minimum of 10 sats per payment.
+export const PRICING = `Cryptbrew (Bitcoin invoicing) payment fee: 1% with a minimum of 10 sats per payment.
 iOS app: free (App Store id 6776077464).
 
-CryptBrew Lock (Mac): $9.99 after trial. Available via Homebrew tap cryptbrew/tap; notarized for macOS.`;
+Note: CryptBrew Lock is a separate Mac product — use the cryptbrew_lock_info tool for Lock pricing; do not confuse Lock's price with this fee.`;
 
-export const LINKS = `Official links:
+export const LINKS = `Official Cryptbrew (invoicing) links:
 - Website: https://www.cryptbrew.com
 - Help: https://www.cryptbrew.com/help.html
 - Support: https://www.cryptbrew.com/support.html
-- CryptBrew Lock: https://www.cryptbrew.com/lock/
 - Downloads: https://www.cryptbrew.com/downloads/
 - llms.txt: https://www.cryptbrew.com/llms.txt
 - API Redoc: https://api.cryptbrew.com/redoc
 - Payment link: https://php.cryptbrew.com/payment-link.php
 - App Store: https://apps.apple.com/app/id6776077464
 - Health (payments): https://api.cryptbrew.com/payments/health
-- Health: https://api.cryptbrew.com/health`;
+- Health: https://api.cryptbrew.com/health
+
+For CryptBrew Lock (separate Mac app), use cryptbrew_lock_info or https://www.cryptbrew.com/lock/`;
 
 export const HOW_IT_WORKS = `How Cryptbrew works:
 
@@ -65,7 +66,7 @@ export const HOW_IT_WORKS = `How Cryptbrew works:
 
 Cryptbrew does not store merchant private keys and is not long-term custody. Fee is 1% (min 10 sats). The iOS app is free.`;
 
-export const LOCK_INFO = `CryptBrew Lock is a macOS lock-screen product from Cryptbrew.
+export const LOCK_INFO = `CryptBrew Lock is a separate macOS lock-screen product from Cryptbrew LLC (not the Cryptbrew iOS invoicing app).
 
 Features:
 - Mac lock screen

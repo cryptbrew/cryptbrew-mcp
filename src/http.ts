@@ -43,7 +43,7 @@ function serverCard() {
   return {
     name: SERVER_NAME,
     description:
-      "Public Cryptbrew MCP — Bitcoin invoicing / tax-ready tracking Q&A, CryptBrew Lock info, and live health. No merchant auth.",
+      "Public Cryptbrew MCP — Bitcoin invoicing / tax-ready tracking Q&A, fees, FAQ, and live health. Lock is a separate tool (cryptbrew_lock_info). No merchant auth.",
     version: SERVER_VERSION,
     remotes: [{ type: "streamable-http", url: "https://mcp.cryptbrew.com/mcp" }],
     homepage: "https://www.cryptbrew.com/",

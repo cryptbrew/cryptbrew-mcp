@@ -3,78 +3,163 @@
     "id": "what-is-cryptbrew",
     "question": "What is Cryptbrew?",
     "answer": "Cryptbrew is business Bitcoin invoicing and tax-ready payment tracking for small and medium businesses. Merchants create invoices, accept Bitcoin (Lightning and on-chain), and get records suitable for bookkeeping and taxes.",
-    "keywords": ["what is", "cryptbrew", "product", "overview", "about"]
+    "keywords": [
+      "what is",
+      "cryptbrew",
+      "product",
+      "overview",
+      "about"
+    ]
   },
   {
     "id": "fees",
     "question": "What are Cryptbrew fees?",
-    "answer": "Cryptbrew charges a 1% fee with a minimum of 10 sats per payment. The iOS app is free.",
-    "keywords": ["fee", "fees", "pricing", "cost", "price", "percent", "sats"]
+    "answer": "Cryptbrew (the Bitcoin invoicing product) charges a 1% fee with a minimum of 10 sats per payment. The iOS app is free. CryptBrew Lock is a separate Mac app with its own price \u2014 not this fee.",
+    "keywords": [
+      "fee",
+      "fees",
+      "pricing",
+      "cost",
+      "percent",
+      "sats",
+      "1%",
+      "payment fee"
+    ]
   },
   {
     "id": "ios-app",
     "question": "Is there an iOS app?",
     "answer": "Yes. The Cryptbrew iOS app is free on the App Store (id 6776077464). It is used for business Bitcoin invoicing and payment tracking.",
-    "keywords": ["ios", "app", "iphone", "app store", "mobile"]
+    "keywords": [
+      "ios",
+      "app",
+      "iphone",
+      "app store",
+      "mobile"
+    ]
   },
   {
     "id": "custody",
     "question": "Does Cryptbrew hold my Bitcoin or private keys?",
     "answer": "No. Cryptbrew auto-forwards payments to the merchant's Lightning or on-chain wallet. Merchant private keys are not stored, and Cryptbrew is not long-term custody.",
-    "keywords": ["custody", "keys", "private key", "wallet", "hold", "custodial", "non-custodial"]
+    "keywords": [
+      "custody",
+      "keys",
+      "private key",
+      "wallet",
+      "hold",
+      "custodial",
+      "non-custodial"
+    ]
   },
   {
     "id": "how-payments-work",
     "question": "How do payments work?",
     "answer": "You create an invoice or payment link for your customer. When they pay in Bitcoin (Lightning or on-chain), Cryptbrew tracks the payment for your records and auto-forwards funds to your configured merchant wallet. You keep tax-ready payment history without Cryptbrew holding long-term custody.",
-    "keywords": ["how", "payment", "invoice", "flow", "works", "receive"]
+    "keywords": [
+      "how",
+      "payment",
+      "invoice",
+      "flow",
+      "works",
+      "receive"
+    ]
   },
   {
     "id": "payment-links",
     "question": "Can I share a payment link?",
     "answer": "Yes. Cryptbrew supports payment links via php.cryptbrew.com/payment-link.php so customers can pay without a complex checkout flow.",
-    "keywords": ["payment link", "link", "share", "customer", "checkout"]
+    "keywords": [
+      "payment link",
+      "link",
+      "share",
+      "customer",
+      "checkout"
+    ]
   },
   {
     "id": "lock",
     "question": "What is CryptBrew Lock?",
-    "answer": "CryptBrew Lock is a Mac lock-screen product with Touch ID support and an optional failed-auth photo plus email alert. It is notarized, available via Homebrew (cryptbrew/tap), and priced at $9.99 after the trial.",
-    "keywords": ["lock", "mac", "touch id", "homebrew", "screen", "security"]
+    "answer": "CryptBrew Lock is a separate Mac lock-screen product from Cryptbrew LLC (not the Cryptbrew iOS invoicing app). It supports Touch ID and an optional failed-auth photo plus email alert. It is notarized, available via Homebrew (cryptbrew/tap), and priced at $9.99 after the trial.",
+    "keywords": [
+      "lock",
+      "mac",
+      "touch id",
+      "homebrew",
+      "screen",
+      "security"
+    ]
   },
   {
     "id": "lock-price",
     "question": "How much does CryptBrew Lock cost?",
     "answer": "CryptBrew Lock is $9.99 after the trial. Install from Homebrew tap cryptbrew/tap; the app is notarized for macOS.",
-    "keywords": ["lock price", "lock cost", "9.99", "trial", "homebrew"]
+    "keywords": [
+      "lock price",
+      "lock cost",
+      "9.99",
+      "trial",
+      "homebrew"
+    ]
   },
   {
     "id": "tax",
     "question": "Does Cryptbrew help with taxes?",
     "answer": "Cryptbrew provides tax-ready payment tracking for SMBs so Bitcoin invoices and payments are easier to reconcile for bookkeeping and tax reporting.",
-    "keywords": ["tax", "taxes", "bookkeeping", "accounting", "records", "tracking"]
+    "keywords": [
+      "tax",
+      "taxes",
+      "bookkeeping",
+      "accounting",
+      "records",
+      "tracking"
+    ]
   },
   {
     "id": "support",
     "question": "How do I get support?",
     "answer": "Email support@cryptbrew.com, visit www.cryptbrew.com/support.html or /help.html, or WhatsApp (707) 387-4140. For setup visits, contact hello@cryptbrew.com.",
-    "keywords": ["support", "help", "contact", "email", "whatsapp", "setup"]
+    "keywords": [
+      "support",
+      "help",
+      "contact",
+      "email",
+      "whatsapp",
+      "setup"
+    ]
   },
   {
     "id": "api-docs",
     "question": "Where is the API documentation?",
     "answer": "API docs are at https://api.cryptbrew.com/redoc. Health endpoints include GET /payments/health and GET /health on api.cryptbrew.com.",
-    "keywords": ["api", "docs", "redoc", "developer", "health"]
+    "keywords": [
+      "api",
+      "docs",
+      "redoc",
+      "developer",
+      "health"
+    ]
   },
   {
     "id": "llms",
     "question": "Is there an llms.txt for AI agents?",
     "answer": "Yes. Cryptbrew publishes https://www.cryptbrew.com/llms.txt for AI agents and tools that want structured product context.",
-    "keywords": ["llms", "ai", "agents", "llm"]
+    "keywords": [
+      "llms",
+      "ai",
+      "agents",
+      "llm"
+    ]
   },
   {
     "id": "downloads",
     "question": "Where can I download Cryptbrew products?",
     "answer": "Downloads and related links are at https://www.cryptbrew.com/downloads/. CryptBrew Lock is also available via Homebrew (cryptbrew/tap). The iOS app is on the App Store.",
-    "keywords": ["download", "downloads", "install", "get"]
+    "keywords": [
+      "download",
+      "downloads",
+      "install",
+      "get"
+    ]
   }
 ]

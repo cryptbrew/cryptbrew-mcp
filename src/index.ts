@@ -40,7 +40,7 @@ export function createServer(): McpServer {
     "cryptbrew_pricing",
     {
       description:
-        "Cryptbrew fees and pricing: payment fee (1% min 10 sats), free iOS app, CryptBrew Lock price.",
+        "Cryptbrew invoicing fees only: payment fee (1% min 10 sats) and free iOS app. Not CryptBrew Lock — use cryptbrew_lock_info for Lock.",
     },
     async () => textResult(PRICING),
   );
@@ -49,7 +49,7 @@ export function createServer(): McpServer {
     "cryptbrew_links",
     {
       description:
-        "Official Cryptbrew URLs: website, help, support, Lock, downloads, llms.txt, API, App Store, health.",
+        "Official Cryptbrew invoicing URLs: website, help, support, downloads, llms.txt, API, App Store, health.",
     },
     async () => textResult(LINKS),
   );
@@ -67,7 +67,7 @@ export function createServer(): McpServer {
     "cryptbrew_lock_info",
     {
       description:
-        "CryptBrew Lock details: Mac lock screen, Touch ID, failed-auth photo+email, Homebrew, pricing.",
+        "CryptBrew Lock only (separate Mac app): lock screen, Touch ID, failed-auth photo+email, Homebrew, $9.99. Not the invoicing 1% fee.",
     },
     async () => textResult(LOCK_INFO),
   );
@@ -76,7 +76,7 @@ export function createServer(): McpServer {
     "cryptbrew_faq",
     {
       description:
-        "Answer a Cryptbrew product question using the built-in FAQ knowledge base.",
+        "Answer a Cryptbrew invoicing/product FAQ. For CryptBrew Lock-only questions prefer cryptbrew_lock_info.",
       inputSchema: {
         question: z
           .string()

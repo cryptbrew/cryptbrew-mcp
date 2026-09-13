@@ -9,10 +9,10 @@ Cryptbrew is business Bitcoin invoicing and tax-ready payment tracking for SMBs.
 | Tool | Description |
 |------|-------------|
 | `cryptbrew_about` | Product overview |
-| `cryptbrew_pricing` | Fees and product pricing |
+| `cryptbrew_pricing` | Invoicing fees only (1% / free iOS) — not Lock |
 | `cryptbrew_links` | Official URLs |
 | `cryptbrew_how_it_works` | Invoice / payment / forwarding flow |
-| `cryptbrew_lock_info` | CryptBrew Lock (Mac) details |
+| `cryptbrew_lock_info` | CryptBrew Lock only (separate Mac app) |
 | `cryptbrew_faq` | FAQ lookup (`question` argument) |
 | `cryptbrew_health` | Live GET health probes |
 | `cryptbrew_contact` | Support and contact channels |
@@ -133,7 +133,7 @@ Restart Claude Desktop after saving.
 
 - Fee: **1%** minimum **10 sats**; iOS app **free**
 - Auto-forward to merchant Lightning/on-chain wallet; **no merchant private keys stored**; not long-term custody
-- **CryptBrew Lock:** Mac lock screen, Touch ID, optional failed-auth photo+email, notarized, Homebrew `cryptbrew/tap`, **$9.99** after trial
+- **CryptBrew Lock (separate product):** Mac lock screen — use `cryptbrew_lock_info` (do not mix with the 1% invoicing fee)
 - Site: [www.cryptbrew.com](https://www.cryptbrew.com) · [help](https://www.cryptbrew.com/help.html) · [support](https://www.cryptbrew.com/support.html) · [lock](https://www.cryptbrew.com/lock/) · [downloads](https://www.cryptbrew.com/downloads/) · [llms.txt](https://www.cryptbrew.com/llms.txt)
 - API: [redoc](https://api.cryptbrew.com/redoc) · health: `/payments/health` and `/health`
 - App Store id `6776077464` · support@cryptbrew.com · WhatsApp (707) 387-4140 · hello@cryptbrew.com for setup visits

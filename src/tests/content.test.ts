@@ -19,18 +19,18 @@ describe("product content", () => {
     assert.match(ABOUT, /not long-term custody/i);
   });
 
-  it("pricing includes 1% min 10 sats and Lock price", () => {
+  it("pricing includes 1% min 10 sats and free app, not Lock price", () => {
     assert.match(PRICING, /1%/);
     assert.match(PRICING, /10 sats/i);
-    assert.match(PRICING, /\$9\.99/);
     assert.match(PRICING, /free/i);
+    assert.doesNotMatch(PRICING, /\$9\.99/);
+    assert.match(LOCK_INFO, /\$9\.99/);
   });
 
   it("links include required URLs", () => {
     for (const url of [
       "https://www.cryptbrew.com",
       "https://www.cryptbrew.com/help.html",
-      "https://www.cryptbrew.com/lock/",
       "https://www.cryptbrew.com/downloads/",
       "https://www.cryptbrew.com/llms.txt",
       "https://www.cryptbrew.com/support.html",
@@ -43,10 +43,15 @@ describe("product content", () => {
     }
   });
 
+  it("links still point Lock seekers to lock page or lock tool", () => {
+    assert.match(LINKS, /lock/i);
+  });
+
   it("how it works and lock and contact are non-empty", () => {
     assert.ok(HOW_IT_WORKS.length > 80);
     assert.match(LOCK_INFO, /Touch ID/i);
     assert.match(LOCK_INFO, /cryptbrew\/tap/);
+    assert.match(LOCK_INFO, /separate/i);
     assert.match(CONTACT, /support@cryptbrew\.com/);
     assert.match(CONTACT, /707/);
     assert.match(CONTACT, /hello@cryptbrew\.com/);
