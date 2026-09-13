@@ -29,13 +29,21 @@
   {
     "id": "ios-app",
     "question": "Is there an iOS app?",
-    "answer": "Yes. The Cryptbrew iOS app is free on the App Store (id 6776077464). It is used for business Bitcoin invoicing and payment tracking.",
+    "answer": "Yes. The Cryptbrew iOS app is free on the App Store (id 6776077464) for business Bitcoin invoicing and payment tracking. On Apple silicon Macs it may also run via the App Store (Designed for iPhone/iPad) \u2014 that is not a Homebrew install. Homebrew (cryptbrew/tap) is only for CryptBrew Lock, the separate Mac lock-screen app.",
     "keywords": [
       "ios",
       "app",
       "iphone",
       "app store",
-      "mobile"
+      "mobile",
+      "mac",
+      "apple silicon",
+      "arm64",
+      "desktop",
+      "m1",
+      "m2",
+      "m3",
+      "m4"
     ]
   },
   {
@@ -183,6 +191,24 @@
       "cryptbrew/tap",
       "install lock",
       "brew install"
+    ]
+  },
+  {
+    "id": "ios-on-mac",
+    "question": "Can I run Cryptbrew on a Mac?",
+    "answer": "The main Cryptbrew invoicing app is the free iOS App Store app (id 6776077464). On Apple silicon Macs you can often open it from the App Store as an iPhone/iPad app \u2014 not via Homebrew. Homebrew (brew tap cryptbrew/tap && brew install --cask cryptbrew-lock) is only for CryptBrew Lock, a separate Mac product.",
+    "keywords": [
+      "mac",
+      "macos",
+      "apple silicon",
+      "arm64",
+      "desktop",
+      "run on mac",
+      "m1",
+      "m2",
+      "m3",
+      "m4",
+      "ipad on mac"
     ]
   }
 ]

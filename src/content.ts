@@ -33,6 +33,8 @@ export const ABOUT = `Cryptbrew is business Bitcoin invoicing and tax-ready paym
 
 Merchants create invoices and payment links, accept Bitcoin (Lightning and on-chain), and get records suitable for bookkeeping and taxes. Payments auto-forward to the merchant's Lightning or on-chain wallet. Cryptbrew does not store merchant private keys and is not long-term custody.
 
+The free iOS app is on the App Store; on Apple silicon Macs it may also run via the App Store (not Homebrew). Homebrew is only for CryptBrew Lock.
+
 Website: https://www.cryptbrew.com
 Help: https://www.cryptbrew.com/help.html
 API docs: https://api.cryptbrew.com/redoc`;
