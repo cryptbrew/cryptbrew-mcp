@@ -80,20 +80,25 @@
   {
     "id": "lock",
     "question": "What is CryptBrew Lock?",
-    "answer": "CryptBrew Lock is a separate Mac lock-screen product from Cryptbrew LLC (not the Cryptbrew iOS invoicing app). It supports Touch ID and an optional failed-auth photo plus email alert. It is notarized, available via Homebrew (cryptbrew/tap), and priced at $9.99 after the trial.",
+    "answer": "CryptBrew Lock is a separate Mac lock-screen product from Cryptbrew LLC (not the Cryptbrew iOS invoicing app). It supports Touch ID and an optional failed-auth photo plus email alert. Notarized, Apple silicon (arm64). Install: brew tap cryptbrew/tap && brew install --cask cryptbrew-lock (tap https://github.com/cryptbrew/homebrew-tap). Price $9.99 after trial.",
     "keywords": [
       "lock",
       "mac",
       "touch id",
       "homebrew",
       "screen",
-      "security"
+      "security",
+      "brew",
+      "cask",
+      "tap",
+      "cryptbrew/tap",
+      "install"
     ]
   },
   {
     "id": "lock-price",
     "question": "How much does CryptBrew Lock cost?",
-    "answer": "CryptBrew Lock is $9.99 after the trial. Install from Homebrew tap cryptbrew/tap; the app is notarized for macOS.",
+    "answer": "CryptBrew Lock is $9.99 after the trial. Install with Homebrew: brew tap cryptbrew/tap && brew install --cask cryptbrew-lock (https://github.com/cryptbrew/homebrew-tap). Also on https://www.cryptbrew.com/downloads/.",
     "keywords": [
       "lock price",
       "lock cost",
@@ -154,12 +159,30 @@
   {
     "id": "downloads",
     "question": "Where can I download Cryptbrew products?",
-    "answer": "Downloads and related links are at https://www.cryptbrew.com/downloads/. CryptBrew Lock is also available via Homebrew (cryptbrew/tap). The iOS app is on the App Store.",
+    "answer": "iOS Cryptbrew app: App Store. CryptBrew Lock (Mac): https://www.cryptbrew.com/downloads/ or Homebrew \u2014 brew tap cryptbrew/tap && brew install --cask cryptbrew-lock (https://github.com/cryptbrew/homebrew-tap).",
     "keywords": [
       "download",
       "downloads",
       "install",
-      "get"
+      "get",
+      "brew",
+      "homebrew",
+      "cask",
+      "tap"
+    ]
+  },
+  {
+    "id": "homebrew-lock",
+    "question": "How do I install CryptBrew Lock with Homebrew?",
+    "answer": "Use the Cryptbrew org tap (not a personal tap): brew tap cryptbrew/tap && brew install --cask cryptbrew-lock. Requires Apple silicon (arm64), macOS Big Sur+. Tap: https://github.com/cryptbrew/homebrew-tap \u00b7 Downloads: https://www.cryptbrew.com/downloads/",
+    "keywords": [
+      "homebrew",
+      "brew",
+      "tap",
+      "cask",
+      "cryptbrew/tap",
+      "install lock",
+      "brew install"
     ]
   }
 ]

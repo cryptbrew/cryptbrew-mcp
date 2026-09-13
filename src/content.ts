@@ -54,7 +54,9 @@ export const LINKS = `Official Cryptbrew (invoicing) links:
 - Health (payments): https://api.cryptbrew.com/payments/health
 - Health: https://api.cryptbrew.com/health
 
-For CryptBrew Lock (separate Mac app), use cryptbrew_lock_info or https://www.cryptbrew.com/lock/`;
+For CryptBrew Lock (separate Mac app), use cryptbrew_lock_info or https://www.cryptbrew.com/lock/
+Homebrew: brew tap cryptbrew/tap && brew install --cask cryptbrew-lock
+Tap repo: https://github.com/cryptbrew/homebrew-tap`;
 
 export const HOW_IT_WORKS = `How Cryptbrew works:
 
@@ -73,12 +75,17 @@ Features:
 - Touch ID
 - Optional failed-auth photo + email alert
 - Notarized for macOS
-- Homebrew: cryptbrew/tap
+- Apple silicon only (arm64)
 
-Price: $9.99 after trial.
+Install via Homebrew (Cryptbrew org tap):
+  brew tap cryptbrew/tap
+  brew install --cask cryptbrew-lock
 
-More: https://www.cryptbrew.com/lock/
-Downloads: https://www.cryptbrew.com/downloads/`;
+Tap: https://github.com/cryptbrew/homebrew-tap
+Direct download: https://www.cryptbrew.com/downloads/
+Product page: https://www.cryptbrew.com/lock/
+
+Price: $9.99 after trial.`;
 
 export const CONTACT = `Contact Cryptbrew:
 - Support email: support@cryptbrew.com

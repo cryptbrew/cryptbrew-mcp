@@ -51,6 +51,7 @@ describe("product content", () => {
     assert.ok(HOW_IT_WORKS.length > 80);
     assert.match(LOCK_INFO, /Touch ID/i);
     assert.match(LOCK_INFO, /cryptbrew\/tap/);
+    assert.match(LOCK_INFO, /brew install --cask cryptbrew-lock/);
     assert.match(LOCK_INFO, /separate/i);
     assert.match(CONTACT, /support@cryptbrew\.com/);
     assert.match(CONTACT, /707/);

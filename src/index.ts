@@ -67,7 +67,7 @@ export function createServer(): McpServer {
     "cryptbrew_lock_info",
     {
       description:
-        "CryptBrew Lock only (separate Mac app): lock screen, Touch ID, failed-auth photo+email, Homebrew, $9.99. Not the invoicing 1% fee.",
+        "CryptBrew Lock only (separate Mac app): brew tap cryptbrew/tap; brew install --cask cryptbrew-lock; Touch ID; $9.99. Not the invoicing 1% fee.",
     },
     async () => textResult(LOCK_INFO),
   );
